@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "start:website": "cd ./apps/website && yarn start",
+    "start:address": "cd ./services/address && yarn start",
+    "start:API": "cd ./services/API && yarn start",
+    "update:schema": "apollo schema:download --endpoint=http://localhost:4000/graphql schema.json",
+    "clean:node_modules": "find . -name \"node_modules\" -exec rm -rf '{}' +"
+  },
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
+}

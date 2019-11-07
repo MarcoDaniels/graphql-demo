@@ -1,0 +1,15 @@
+{
+  "name": "address",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "rm -rf dist/* && tsc --pretty && (node dist/index.js)",
+    "start": "rm -rf dist/* && tsc --pretty && (node dist/index.js)"
+  },
+  "dependencies": {
+    "apollo-server": "2.9.7",
+    "graphql": "14.5.8",
+    "typescript": "3.7.2"
+  }
+}
